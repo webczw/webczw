@@ -15,14 +15,14 @@ namespace webczw.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "这是关于我的简介";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "这是我的联系方式，可以联系到我";
 
             return View();
         }
