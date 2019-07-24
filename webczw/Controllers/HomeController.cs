@@ -26,5 +26,12 @@ namespace webczw.Controllers
 
             return View();
         }
+
+        public ActionResult Blog()
+        {
+            ViewBag.Message = "在这里写下我的想法";
+
+            return View();
+        }
     }
 }
