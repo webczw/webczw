@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using webczw.BLL;
+using webczw.Models;
 
 namespace webczw.Controllers
 {
@@ -29,8 +31,13 @@ namespace webczw.Controllers
 
         public ActionResult Blog()
         {
+            UserManager userManager = new UserManager();
+            //UserModels queryUserModels = new UserModels();
+            //queryUserModels.Id = "028636db-f6b6-4640-9001-341931a799a2";
+            //queryUserModels.UserName = "wwe56@163.com";
+            //ViewBag.UserModelsList = userManager.findUserList(queryUserModels);
+            ViewBag.UserModelsList = userManager.findAllUserList();
             ViewBag.Message = "在这里写下我的想法";
-
             return View();
         }
     }
