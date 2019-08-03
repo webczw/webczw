@@ -28,9 +28,11 @@ namespace webczw.Controllers
 
             return View();
         }
-
+ /*
         public ActionResult Blog()
         {
+           
+            int currentPage = Convert.ToInt32(Request.QueryString["currentPage"]);
             UserManager userManager = new UserManager();
             //UserModels queryUserModels = new UserModels();
             //queryUserModels.Id = "028636db-f6b6-4640-9001-341931a799a2";
@@ -39,6 +41,50 @@ namespace webczw.Controllers
             ViewBag.UserModelsList = userManager.findAllUserList();
             ViewBag.Message = "在这里写下我的想法";
             return View();
+            
+
+            ArticlesModels articlesModels = new ArticlesModels();
+            articlesModels.CurrentPage = 0;
+            articlesModels.PageSize = 15;
+            ArticlesManager articlesManager = new ArticlesManager();
+            PageResultModels<ArticlesModels> pageResultModels = articlesManager.findListByPage(articlesModels);
+            ViewBag.PageResultModels = pageResultModels;
+            ViewBag.Message = "在这里写下我的想法";
+            return View();
+        }*/
+
+        public ActionResult Blog(int? currentPage,int? articleTypesId) {
+            ArticlesModels articlesModels = new ArticlesModels();
+            articlesModels.CurrentPage = currentPage == null ? 0 : Convert.ToInt32(currentPage);
+            if (articlesModels.CurrentPage > 0) {
+                articlesModels.CurrentPage = articlesModels.CurrentPage - 1;
+            }
+            articlesModels.ArticleTypesId = articleTypesId == null ? 0 : Convert.ToInt32(articleTypesId);
+            articlesModels.PageSize = 15;
+            ArticlesManager articlesManager = new ArticlesManager();
+            PageResultModels<ArticlesModels> pageResultModels = articlesManager.findListByPage(articlesModels);
+            ViewBag.PageResultModels = pageResultModels;
+            ViewBag.Message = "在这里写下我的想法";
+            return View();
         }
+
+        public ActionResult Detail(int? id)
+        {
+            if (id == null) {
+                ViewBag.Message = "参数缺少ID";
+                return View();
+            }
+            ArticlesManager articlesManager = new ArticlesManager();
+            ArticlesModels articlesModels = articlesManager.findById(Convert.ToInt32(id));
+            if (articlesModels == null)
+            {
+                ViewBag.Message = "系统找不到数据，入参ID为：" + id;
+                return View();
+            }
+            ViewBag.ArticlesModels = articlesModels;
+            ViewBag.Message = articlesModels.Title;
+            return View();
+        }
+
     }
 }

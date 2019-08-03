@@ -192,6 +192,100 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="userfiles\0%281%29.jpg" />
+    <Content Include="userfiles\0&amp;wxfrom=5 %281%29.jpg" />
+    <Content Include="userfiles\0&amp;wxfrom=5.jpg" />
+    <Content Include="userfiles\0.jpg" />
+    <Content Include="userfiles\1%281%29.jpg" />
+    <Content Include="userfiles\1.jpg" />
+    <Content Include="userfiles\14582306221129.jpg" />
+    <Content Include="userfiles\2.jpg" />
+    <Content Include="userfiles\20150429110707.jpg" />
+    <Content Include="userfiles\3.jpg" />
+    <Content Include="userfiles\3b31bb5f7aa24466bb8e8c601fc4d70a%281%29.jpeg" />
+    <Content Include="userfiles\3b31bb5f7aa24466bb8e8c601fc4d70a.jpeg" />
+    <Content Include="userfiles\63a179c2jw1dotkcv1rpgj1.jpg" />
+    <Content Include="userfiles\640&amp;wxfrom=5 %281%29.jpg" />
+    <Content Include="userfiles\640&amp;wxfrom=5 %282%29.jpg" />
+    <Content Include="userfiles\640&amp;wxfrom=5 %283%29.jpg" />
+    <Content Include="userfiles\640&amp;wxfrom=5 %284%29.jpg" />
+    <Content Include="userfiles\640&amp;wxfrom=5 %285%29.jpg" />
+    <Content Include="userfiles\640&amp;wxfrom=5 %286%29.jpg" />
+    <Content Include="userfiles\640&amp;wxfrom=5 %287%29.jpg" />
+    <Content Include="userfiles\640&amp;wxfrom=5.jpg" />
+    <Content Include="userfiles\6b37299fgy1fwroc1vi0nj20hs0bh407.jpg" />
+    <Content Include="userfiles\7a8a144660ec23496a63e511.jpg" />
+    <Content Include="userfiles\9045898_1324713183_4.jpg" />
+    <Content Include="userfiles\a-lifetime-programmer.png" />
+    <Content Include="userfiles\asp2%281%29.jpg" />
+    <Content Include="userfiles\asp2%282%29.jpg" />
+    <Content Include="userfiles\asp2%3b.jpg" />
+    <Content Include="userfiles\asp2.jpg" />
+    <Content Include="userfiles\byt.jpg" />
+    <Content Include="userfiles\Capture.png" />
+    <Content Include="userfiles\file\Rose%281%29.jpg" />
+    <Content Include="userfiles\file\Rose.jpg" />
+    <Content Include="userfiles\image\imgs\cnnic_logo.jpg" />
+    <Content Include="userfiles\image\imgs\power.jpg" />
+    <Content Include="userfiles\image\imgs\power1.gif" />
+    <Content Include="userfiles\image\imgs\power1.jpg" />
+    <Content Include="userfiles\image\wz_imgs\0.jpg" />
+    <Content Include="userfiles\image\wz_imgs\004.jpg" />
+    <Content Include="userfiles\image\wz_imgs\1.jpg" />
+    <Content Include="userfiles\image\wz_imgs\14582306221129.jpg" />
+    <Content Include="userfiles\image\wz_imgs\2.jpg" />
+    <Content Include="userfiles\image\wz_imgs\20160320\20160320170933.png" />
+    <Content Include="userfiles\image\wz_imgs\20160320\20160320170955.png" />
+    <Content Include="userfiles\image\wz_imgs\20160320\20160320171008.png" />
+    <Content Include="userfiles\image\wz_imgs\20160320\20160320171019.png" />
+    <Content Include="userfiles\image\wz_imgs\20160320\20160320171035.png" />
+    <Content Include="userfiles\image\wz_imgs\20160320\20160320171055.png" />
+    <Content Include="userfiles\image\wz_imgs\20170107\IMG_2987.JPG" />
+    <Content Include="userfiles\image\wz_imgs\4.jpg" />
+    <Content Include="userfiles\image\wz_imgs\DSCF2249.jpg" />
+    <Content Include="userfiles\image\wz_imgs\IMG_2988.PNG" />
+    <Content Include="userfiles\image\wz_imgs\Jmail1.jpg" />
+    <Content Include="userfiles\image\wz_imgs\Jmail2.jpg" />
+    <Content Include="userfiles\image\wz_imgs\news%281%29.jpg" />
+    <Content Include="userfiles\image\wz_imgs\news.jpg" />
+    <Content Include="userfiles\image\wz_imgs\qqhl.png" />
+    <Content Include="userfiles\image\wz_imgs\QQ截图20160117141241.png" />
+    <Content Include="userfiles\image\wz_imgs\sy_20101105165608560246.jpg" />
+    <Content Include="userfiles\image\wz_imgs\未命名.jpg" />
+    <Content Include="userfiles\IMG_0730-A.JPG" />
+    <Content Include="userfiles\IMG_0819.jpg" />
+    <Content Include="userfiles\IMG_1883.JPG" />
+    <Content Include="userfiles\mmexport1429634150793.jpg" />
+    <Content Include="userfiles\nc.jpg" />
+    <Content Include="userfiles\p26205527.jpg" />
+    <Content Include="userfiles\P50504-221135_mh1430748816063.jpg" />
+    <Content Include="userfiles\psb1.jpg" />
+    <Content Include="userfiles\psb2.jpg" />
+    <Content Include="userfiles\psb3.jpg" />
+    <Content Include="userfiles\psb4.jpg" />
+    <Content Include="userfiles\psb5.jpg" />
+    <Content Include="userfiles\psb6.jpg" />
+    <Content Include="userfiles\QQ截图20150418082508.jpg" />
+    <Content Include="userfiles\QQ截图20150418083623.jpg" />
+    <Content Include="userfiles\QQ截图20150420230139.jpg" />
+    <Content Include="userfiles\QQ截图20150429110707%281%29.jpg" />
+    <Content Include="userfiles\QQ截图20150429110707.jpg" />
+    <Content Include="userfiles\QQ截图20150430090656.jpg" />
+    <Content Include="userfiles\QQ截图20150430090802.jpg" />
+    <Content Include="userfiles\QQ截图20150513223501.jpg" />
+    <Content Include="userfiles\QQ截图20160109190743.png" />
+    <Content Include="userfiles\QQ截图20181031213216.jpg" />
+    <Content Include="userfiles\QQ截图20181119235042.jpg" />
+    <Content Include="userfiles\QQ截图20181119235736%281%29.jpg" />
+    <Content Include="userfiles\QQ截图20181119235736.jpg" />
+    <Content Include="userfiles\shiyan.jpg" />
+    <Content Include="userfiles\sy_20101105165608560246.jpg" />
+    <Content Include="userfiles\telerik.gif" />
+    <Content Include="userfiles\test.jpg" />
+    <Content Include="userfiles\top_02.jpg" />
+    <Content Include="userfiles\xnzjcn.jpg" />
+    <Content Include="userfiles\发表于去年底的文字.jpg" />
+    <Content Include="userfiles\图片 004.jpg" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -231,9 +325,12 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Blog.cshtml" />
+    <Content Include="Views\Home\Detail.cshtml" />
+    <Content Include="userfiles\W25.bin" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="userfiles\flash\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
