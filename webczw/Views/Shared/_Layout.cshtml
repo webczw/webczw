@@ -29,12 +29,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">博客 <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="/Home/Blog">全部</a></li>
-                            <li><a href="#">经典收藏</a></li>
-                            <li><a href="#">生活笔记</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">前端技术</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">后端技术</a></li>
+                            @Html.Partial("_ActiclActicleTypePartial")
                         </ul>
                     </li>
                     <li class="nav-item">@Html.ActionLink("关于", "About", "Home")</li>

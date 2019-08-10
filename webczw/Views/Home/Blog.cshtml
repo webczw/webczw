@@ -3,9 +3,9 @@
 }
 <h3>@ViewBag.Message</h3>
 <ol class="breadcrumb">
-    <li><a href="#">首页</a></li>
-    <li><a href="#">博客</a></li>
-    <li class="active">全部</li>
+    <li><a href="/Home">首页</a></li>
+    <li><a href="/Home/Blog">博客</a></li>
+    <li class="active">@ViewBag.ActicleTypeModels.Name</li>
 </ol>
 <table class="table">
     <thead>
@@ -28,20 +28,21 @@
 </table>
 <nav aria-label="Page navigation example">
     <ul class="pagination">
-        <li class="page-item"><a class="page-link" href="/Home/Blog">首页</a></li>
-        <li class="page-item"><a class="page-link" href="#">上一页</a></li>
-        <li class="page-item"><a class="page-link" href="/Home/Blog/1">1</a></li>
-        <li class="page-item"><a class="page-link" href="/Home/Blog/2">2</a></li>
-        <li class="page-item"><a class="page-link" href="/Home/Blog/3">3</a></li>
-        <li class="page-item"><a class="page-link" href="/Home/Blog/4">4</a></li>
-        <li class="page-item"><a class="page-link" href="/Home/Blog/5">5</a></li>
-        <li class="page-item active"><a class="page-link" href="/Home/Blog/6">6</a></li>
-        <li class="page-item"><a class="page-link" href="/Home/Blog/7">7</a></li>
-        <li class="page-item"><a class="page-link" href="/Home/Blog/8">8</a></li>
-        <li class="page-item"><a class="page-link" href="/Home/Blog/9">9</a></li>
-        <li class="page-item"><a class="page-link" href="/Home/Blog/10">10</a></li>
-        <li class="page-item"><a class="page-link" href="/Home/Blog/11">11</a></li>
-        <li class="page-item"><a class="page-link" href="#">下一页</a></li>
-        <li class="page-item"><a class="page-link" href="#">末页</a></li>
+        <li class="page-item"><a class="page-link" href="/Home/Blog/@ViewBag.PageResultModels.First">首页</a></li>
+        <li class="page-item"><a class="page-link" href="/Home/Blog/@ViewBag.PageResultModels.Previous">上一页</a></li>
+        @foreach (var pageModels in ViewBag.PageResultModels.NumberList)
+        {
+            if (pageModels.Number == ViewBag.PageResultModels.CurrentPage)
+            {
+                <li class="page-item active"><a class="page-link" href="/Home/Blog/@pageModels.Uri">@pageModels.Number</a></li>
+            }
+            else
+            {
+                <li class="page-item"><a class="page-link" href="/Home/Blog/@pageModels.Uri">@pageModels.Number</a></li>
+            }
+
+        }
+        <li class="page-item"><a class="page-link" href="/Home/Blog/@ViewBag.PageResultModels.Next">下一页</a></li>
+        <li class="page-item"><a class="page-link" href="/Home/Blog/@ViewBag.PageResultModels.Last">末页</a></li>
     </ul>
 </nav>

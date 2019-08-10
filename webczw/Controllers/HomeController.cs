@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using webczw.BLL;
 using webczw.Models;
+using webczw.Models.Query;
 
 namespace webczw.Controllers
 {
@@ -54,16 +55,26 @@ namespace webczw.Controllers
         }*/
 
         public ActionResult Blog(int? currentPage,int? articleTypesId) {
-            ArticlesModels articlesModels = new ArticlesModels();
-            articlesModels.CurrentPage = currentPage == null ? 0 : Convert.ToInt32(currentPage);
-            if (articlesModels.CurrentPage > 0) {
-                articlesModels.CurrentPage = articlesModels.CurrentPage - 1;
-            }
-            articlesModels.ArticleTypesId = articleTypesId == null ? 0 : Convert.ToInt32(articleTypesId);
-            articlesModels.PageSize = 15;
+            ArticlesQueryModels articlesQueryModels = new ArticlesQueryModels();
+            articlesQueryModels.CurrentPage = currentPage == null ? 1 : Convert.ToInt32(currentPage);
+            
+            articlesQueryModels.ArticleTypesId = articleTypesId == null ? 0 : Convert.ToInt32(articleTypesId);
+            articlesQueryModels.PageSize = 15;
             ArticlesManager articlesManager = new ArticlesManager();
-            PageResultModels<ArticlesModels> pageResultModels = articlesManager.findListByPage(articlesModels);
+            PageResultModels<ArticlesModels> pageResultModels = articlesManager.findListByPage(articlesQueryModels);
             ViewBag.PageResultModels = pageResultModels;
+            
+            if (articlesQueryModels.ArticleTypesId == 0)
+            {
+                ActicleTypeModels acticleTypeModels = new ActicleTypeModels();
+                acticleTypeModels.Name = "全部";
+                acticleTypeModels.Id = 0;
+                ViewBag.ActicleTypeModels = acticleTypeModels;
+            }
+            else {
+                ActicleTypeManager acticleTypeManager = new ActicleTypeManager();
+                ViewBag.ActicleTypeModels = acticleTypeManager.findById(articlesQueryModels.ArticleTypesId);
+            }
             ViewBag.Message = "在这里写下我的想法";
             return View();
         }
@@ -84,6 +95,14 @@ namespace webczw.Controllers
             ViewBag.ArticlesModels = articlesModels;
             ViewBag.Message = articlesModels.Title;
             return View();
+        }
+
+        public ActionResult _Layout()
+        {
+            ActicleTypeManager acticleTypeManager = new ActicleTypeManager();
+            List<ActicleTypeModels> list = acticleTypeManager.findList();
+            ViewBag.ActicleTypeModelsList = list;
+            return PartialView();
         }
 
     }

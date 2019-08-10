@@ -1,0 +1,8 @@
+﻿@using webczw.BLL
+@using webczw.Models
+@{
+    List<ActicleTypeModels> list = ActicleTypeManager.list();
+    foreach (var acticleTypeModels in list) {
+        <li><a href="/Home/Blog/1/@acticleTypeModels.Id">@acticleTypeModels.Name</a></li>
+    }
+}

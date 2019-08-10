@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webczwDAL", "webczwDAL\webc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webczwDBUtil", "webczwDBUtil\webczwDBUtil.csproj", "{3A6D55E6-7183-4E27-851E-90399DF198A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webczwUnitTest", "webczwUnitTest\webczwUnitTest.csproj", "{03457F1E-70C2-4F84-A884-D32BB69ECEC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3A6D55E6-7183-4E27-851E-90399DF198A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A6D55E6-7183-4E27-851E-90399DF198A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A6D55E6-7183-4E27-851E-90399DF198A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03457F1E-70C2-4F84-A884-D32BB69ECEC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03457F1E-70C2-4F84-A884-D32BB69ECEC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03457F1E-70C2-4F84-A884-D32BB69ECEC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03457F1E-70C2-4F84-A884-D32BB69ECEC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
