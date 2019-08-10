@@ -2,4 +2,43 @@
     ViewBag.Title = ViewBag.Message;
 }
 <h3>@ViewBag.Message</h3>
-@Html.Raw(@ViewBag.ArticlesModels.Content)
+<span style="margin-right:14px; color:#858585">@ViewBag.ArticlesModels.CreateDate</span>
+<a style="margin-right:14px;" href="#" target="_blank">@ViewBag.ArticlesModels.Author</a>
+    <span style="margin-right:14px; color:#858585">阅读数 @ViewBag.ArticlesModels.Ctr</span>
+<span style="margin-right:14px; color:#858585">标签 @ViewBag.ArticlesModels.Tags</span>
+    <hr />
+    @Html.Raw(@ViewBag.ArticlesModels.Content)
+<hr />
+
+    <form>
+        <div class="form-group">
+            <textarea class="form-control" placeholder="想对作者说点什么" style="width: 100%; overflow:auto; word-break:break-all;"></textarea>
+            </div>
+        <div class="text-right">
+            <span style="margin-right:14px;">还能输入1000个字符</span><button type="submit" class="btn btn-danger">发表评论</button>
+        </div>
+        
+    </form>
+
+<ul class="list-unstyled">
+    <li style="border-bottom:1px dashed #e0e0e0; margin-top:8px; margin-bottom:8px; padding-bottom: 8px;">
+        <div class="row">
+            <div class="col-md-9"><span>zhangxiang_net： 不错的文章 可以借鉴学习</span><span style="color:#999; margin-left:14px;">(3天前 #3楼)</span></div>
+            <div class="col-md-3 text-right"><span class="glyphicon glyphicon-thumbs-up" style="cursor:pointer"></span></div>
+        </div>
+    </li>
+
+    <li style="border-bottom:1px dashed #e0e0e0; margin-top:8px; margin-bottom:8px; padding-bottom: 8px;">
+        <div class="row">
+            <div class="col-md-9"><span>lovechenyu： 嗯 好东西 收藏啦</span><span style="color:#999; margin-left:14px;">(4天前 #2楼)</span></div>
+            <div class="col-md-3 text-right"><span class="glyphicon glyphicon-thumbs-up" style="cursor:pointer"></span></div>
+        </div>
+    </li>
+
+    <li style="border-bottom:1px dashed #e0e0e0; margin-top:8px; margin-bottom:8px; padding-bottom: 8px;">
+        <div class="row">
+            <div class="col-md-9"><span>木兮同学： 不错不错，收藏了 </span><span style="color:#999; margin-left:14px;">(6天前 #1楼)</span></div>
+            <div class="col-md-3 text-right"><span class="glyphicon glyphicon-thumbs-up" style="cursor:pointer"></span></div>
+        </div>
+</li>
+</ul>
